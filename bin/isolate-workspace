@@ -23,7 +23,7 @@ async function run({ workspaceName, outputFolder }) {
   await localizeWorkspaceDependencies(
     path.join(outputFolder, 'package.json'),
     workspaces,
-    path.join(outputFolder, 'node_modules')
+    'node_modules'
   )
 
   await Promise.all(
